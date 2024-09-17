@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta Ágil - Calculadora de Macronutrientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="test.html"><img src="https://us.123rf.com/450wm/butenkow/butenkow1611/butenkow161100446/67316295-modelo-de-design-de-logotipo-para-dieta-ilustra%C3%A7%C3%A3o-vetorial-de-%C3%ADcone.jpg" alt="Logo Dieta Ágil" ></a>
+        </div>
+        <div class="title">
+            <h1>Dieta Ágil</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section com Textos e Imagens -->
+    <section class="intro">
+        <div class="intro-content">
+            <div class="intro-text-left">
+                <h1>Bem-vindo à Dieta Ágil</h1>
+                <p>A Dieta Ágil foi criada para transformar sua alimentação de forma simples e prática. Utilizando nossa calculadora, você pode facilmente acompanhar seus macronutrientes e otimizar sua dieta de acordo com seus objetivos. Nossa missão é tornar a nutrição acessível e eficiente para todos.</p>
+                <p>Nossa ferramenta ajuda você a controlar a quantidade de calorias, proteínas, carboidratos e gorduras de maneira rápida, sem complicações. Praticidade e saúde andam de mãos dadas conosco!</p>
+            </div>
+            <div class="intro-image-left">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Imagem Saudável">
+            </div>
+        </div>
+        
+        <div class="intro-content">
+            <div class="intro-image-right">
+                <img src="https://www.tendaatacado.com.br/dicas/wp-content/uploads/2020/09/Topo-tipos-de-dieta-ok.jpg" alt="Alimentos Saudáveis">
+            </div>
+            <div class="intro-text-right">
+                <h1>Por Que Usar Nossa Calculadora?</h1>
+                <p>Com a nossa calculadora de macronutrientes, você consegue planejar suas refeições e controlar seu consumo diário. Se você está buscando emagrecimento, ganho de massa muscular, ou simplesmente manter uma alimentação equilibrada, essa é a ferramenta ideal.</p>
+                <p>A Dieta Ágil é confiável, fácil de usar, e te ajuda a entender melhor como os alimentos impactam seu corpo. Experimente agora e transforme sua alimentação!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Calculadora -->
+    <section id="calculadora" class="container">
+        <div class="calculator-box">
+            <h2>Calculadora de Macronutrientes</h2>
+
+            <label for="food">Escolha um alimento:</label>
+            <select id="food" class="animated-input">
+                <option value="banana">Banana</option>
+                <option value="maca">Maçã</option>
+                <option value="laranja">Laranja</option>
+                <option value="manga">Manga</option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="morango">Morango</option>
+                <option value="pera">Pera</option>
+                <option value="kiwi">Kiwi</option>
+                <option value="uva">Uva</option>
+                <option value="melancia">Melancia</option>
+                <option value="goiaba">Goiaba</option>
+                <option value="cereja">Cereja</option>
+                <option value="ameixa">Ameixa</option>
+            </select>
+
+            <br>
+
+            <label for="weight">Quantidade em gramas:</label>
+            <input type="number" id="weight" class="animated-input" placeholder="Gramas consumidas">
+
+            <br>
+
+            <button onclick="calculate()" class="animated-button">Calcular</button>
+
+            <h2>Resultados:</h2>
+            <p id="results"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.title h1 {
+    color: #418343;
+    font-size: 40px;
+    margin: 0;
+    font-family: "Acme", sans-serif;
+    
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+    margin-right: 30px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.navbar a:hover {
+    color: #418343;
+}
+
+
+.intro {
+    margin-top: 80px; 
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro-text-left, .intro-text-right {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+}
+
+.intro-text-left h1, .intro-text-right h1 {
+    font-size: 36px;
+    color: #418343;
+}
+
+.intro-text-left p, .intro-text-right p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.intro-image-left img, .intro-image-right img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculadora */
+.container {
+    padding: 100px 20px;
+    background-color: #F3F4F6;
+    text-align: center;
+}
+
+.calculator-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #418343;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+select, input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #418343;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover, input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(163, 230, 53, 0.4);
+}
+
+.animated-button {
+    background-color: #418343;
+    color: #fff;
+    border: none;
+    margin: 20px 0 0;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.animated-button:hover {
+    background-color: #84CC16;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(163, 230, 53, 0.3);
+}
+
+p {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease;
+}
